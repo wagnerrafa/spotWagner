@@ -1,6 +1,16 @@
 body{
-    background-image: url(images/images.jpg)
+    background-image: url(images/insta.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-header{
-    font-size: 3rem;
+header div{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+header a{
+    
+    font-size: 2rem;
+    text-decoration: none;
 }
