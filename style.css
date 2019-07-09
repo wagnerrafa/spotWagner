@@ -12,46 +12,63 @@ body{
     grid-template-areas: "header"
                         "section"
                         "footer";
-    grid-template-rows:20% 150% 100%;
+    grid-template-rows:10% 120% 100%;
     margin: 0;
     padding: 0;
+   
 }
 header{
     display: grid;
     grid-template-areas: "header p";
     grid-auto-columns: 50% 50%;
-    grid-template-rows: 33%;
+    grid-template-rows: 3%;
     background-color: black;
-    opacity: 0.6;
+    opacity: 0.7;
     margin: 0;
     padding: 0;
-
+    color: white;
+    margin-bottom: 50px;
+    position: fixed;
+    width: 100%;
 }
 header div{
     grid-area: header;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-left: 70px;
+    margin-left: 150px;
     margin-top:5px;
-    position: absolute;
     font-size: 2rem;
+    padding-top: 40px;
     
 }
 header div a{
     font-size: 2rem;
+    color: white;
 }
 header a{
     font-size: 1rem;
     text-decoration: none;
     color:white;
+    
+   
 }
-p{display: flex;
+p
+{display: flex;
     grid-area: p;
     align-items: center;
     justify-content: space-evenly;
     margin-top: 40px;
-
+    
+}
+header div img{
+    background-color: white;
+    border-radius: 30px;
+    color: white;
+    text-align: end;
+    padding: 0;
+    margin-bottom: -20px;
+    margin-top: -20px;
 }
 
 section{
@@ -86,32 +103,48 @@ footer{
     display: grid;
     grid-area: footer;
     grid-template-areas:"nav nav nav nav nav";
-    grid-template-columns: 30% 15% 15% 15% auto;
+    grid-template-columns: 30% 15% 15% 15% 25%;
     justify-content: left;
-    background-color: black;
     color: white;
     font-family: Circular, Helvetica, Arial, sans-serif;
     padding-top: 60px;
+    background-color: black;
 }
 
 footer nav a{
-    display: flex ; 
-    flex-direction: column;
+    display: flex ;
     color: white;
     text-decoration: none;
     margin: 20px;
-
-
 }
 footer nav div{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    margin-left: 130px;
+    font-size: 1.8rem;
+    padding-top: 0;
     
-    margin-left: 70px;
-    font-size: 2rem;
 }
 footer nav h5{
     display: flex;
     justify-content: left;
     margin-left: 20px;
+}
+footer nav a :last-child{
+    display: flex;
+    background-color: aliceblue;
+    opacity: 0.6;
+    border-radius: 250px;
+    width: 40px;
+    height: 40px;
+    padding: 15px;
+    margin: 0;
+    margin-top: -20px;
+ 
+
+}
+footer :last-child{
+    display: flex;
+    flex-direction: row;
+  
 }
