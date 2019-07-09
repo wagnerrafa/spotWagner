@@ -148,3 +148,26 @@ footer :last-child{
     flex-direction: row;
   
 }
+
+@media(max-width: 850px){
+    header{
+        display: flex;
+    }
+     p{
+        flex-direction: column;
+        padding-top: 50px;
+        display: flex;
+        position: absolute;
+        justify-content: right;
+        align-content: flex-end;
+    
+        }
+        header div{
+            display: flex;
+            justify-content: left;
+            margin: -20px 0px 20px 80px;
+            font-size: 2rem;
+            
+            }
+    
+}
