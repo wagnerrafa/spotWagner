@@ -1,26 +1,117 @@
-body{
-    background-image: url(images/insta.png);
+html{
+    height: 1200px;
+    background-image: url(images/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     display: block;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: grid;
+    grid-template-areas: "header"
+                        "section"
+                        "footer";
+    grid-template-rows:20% 150% 100%;
+    margin: 0;
+    padding: 0;
 }
 header{
     display: grid;
     grid-template-areas: "header p";
     grid-auto-columns: 50% 50%;
     grid-template-rows: 33%;
+    background-color: black;
+    opacity: 0.6;
+    margin: 0;
+    padding: 0;
+
 }
 header div{
     grid-area: header;
+    display: flex;
     align-items: center;
     justify-content: flex-start;
+    margin-left: 70px;
+    margin-top:5px;
+    position: absolute;
+    font-size: 2rem;
+    
+}
+header div a{
+    font-size: 2rem;
 }
 header a{
-    font-size: 2rem;
+    font-size: 1rem;
     text-decoration: none;
+    color:white;
 }
-p{
+p{display: flex;
     grid-area: p;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-evenly;
+    margin-top: 40px;
+
+}
+
+section{
+    grid-area: section;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+section div h1{
+    margin: 0;
+    color: white;
+    font-size: 5rem;
+}
+section div h5{
+    color: white;
+    font-size: 1rem;
+}
+section div div{
+    margin-top: 60px;
+}
+section div a{
+    text-decoration: none;
+    background-color: #1DB954;
+    color: white;
+    padding: 20px 50px 20px 50px;
+    border-radius: 50px;
+}
+footer{
+    display: grid;
+    grid-area: footer;
+    grid-template-areas:"nav nav nav nav nav";
+    grid-template-columns: 30% 15% 15% 15% auto;
+    justify-content: left;
+    background-color: black;
+    color: white;
+    font-family: Circular, Helvetica, Arial, sans-serif;
+    padding-top: 60px;
+}
+
+footer nav a{
+    display: flex ; 
+    flex-direction: column;
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+
+
+}
+footer nav div{
+    display: flex;
+    justify-content: center;
+    
+    margin-left: 70px;
+    font-size: 2rem;
+}
+footer nav h5{
+    display: flex;
+    justify-content: left;
+    margin-left: 20px;
 }
