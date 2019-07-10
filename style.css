@@ -31,12 +31,23 @@ header{
     position: fixed;
     width: 100%;
 }
+header div button{
+    width: 32px;
+    background-image: url('images/menu.png');
+    height: 32px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: white;
+    display: none;
+    /* margin-left: -110px; */
+}
 header div{
     grid-area: header;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-left: 150px;
+    margin-left: 10px;
     margin-top:5px;
     font-size: 2rem;
     padding-top: 40px;
@@ -86,6 +97,7 @@ section div h1{
     font-size: 5rem;
 }
 section div h5{
+    display: flexbox;
     color: white;
     font-size: 1rem;
 }
@@ -152,6 +164,13 @@ footer :last-child{
 @media(max-width: 850px){
     header{
         display: flex;
+        background-color: black;
+        opacity: 1;
+        height: 50px;
+        
+        
+    }
+    header a{
     }
      p{
         flex-direction: column;
@@ -160,14 +179,50 @@ footer :last-child{
         position: absolute;
         justify-content: right;
         align-content: flex-end;
+        margin-top: 10px;
+        margin-left: 4px;
     
         }
         header div{
             display: flex;
-            justify-content: left;
+            justify-content:space-between;
             margin: -20px 0px 20px 80px;
             font-size: 2rem;
             
+            }
+            header div a{
+                font-size: 1.5rem;
+        
+            }
+            header div button{
+                display: flex;
+                margin-left: -55px;
+                margin-right: 20px;
+            }
+            header div button:hover{
+                background-color: #1DB954;
+            }
+            header div img{
+                width: 32px;
+                height: 32px;
+                margin-right: 5px;
+            }
+            
+            section div{
+                display: flow-root;
+                flex-direction: column;
+                
+                justify-content: space-between;
+            }
+            section{
+                justify-content: space-between;
+                display: flex;
+            }
+            section div h1{
+                margin: 0;
+                color: white;
+                font-size: 4rem;
+                justify-content: space-between;
             }
     
 }
