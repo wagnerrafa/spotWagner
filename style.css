@@ -244,3 +244,12 @@ footer :last-child{
     section div div {
         margin-top: 190px;
 }
+section div a {
+    text-decoration: none;
+    background-color: #1DB954;
+    color: white;
+    padding: 10px 10px 10px 10px;
+    border-radius: 50px;
+    font-size: 1rem;
+    justify-content: center;
+}
