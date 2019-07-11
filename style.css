@@ -91,18 +91,18 @@ section{
     padding: 0;
     margin: 0;
 }
-section div h1{
+section div p{
     margin: 0;
     color: white;
     font-size: 5rem;
 }
-section div h5{
-    display: flexbox;
+section div P:nth-child(2){
+    display: flex;
     color: white;
     font-size: 1rem;
 }
 section div div{
-    margin-top: 60px;
+    margin-top: 40px;
 }
 section div a{
     text-decoration: none;
@@ -172,7 +172,7 @@ footer :last-child{
     }
     header a{
     }
-     p{
+     header p{
         flex-direction: column;
         padding-top: 50px;
         display: flex;
@@ -209,7 +209,7 @@ footer :last-child{
             }
             
             section div{
-                display: flow-root;
+                display: flex;
                 flex-direction: column;
                 
                 justify-content: space-between;
@@ -218,11 +218,29 @@ footer :last-child{
                 justify-content: space-between;
                 display: flex;
             }
-            section div h1{
+            section div p{
                 margin: 0;
                 color: white;
                 font-size: 4rem;
                 justify-content: space-between;
+                flex-direction: column;
+        display: flex;
+        position: absolute;
+        align-items: center;
+        /* justify-content: right;
+        align-content: flex-end; */
             }
-    
+            section div p:nth-child(2){
+                margin-top: 80px;
+            }
+            section div div {
+                margin-top: 120px;
+            }
+}
+@media(max-width: 503px){
+    section div p:nth-child(2){
+        margin-top: 150px;
+    }
+    section div div {
+        margin-top: 190px
 }
