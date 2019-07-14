@@ -1,4 +1,4 @@
-html{
+html {
     height: 1200px;
     background-image: url(images/background.jpg);
     background-repeat: no-repeat;
@@ -7,17 +7,16 @@ html{
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     display: grid;
-    grid-template-areas: "header"
-                        "section"
-                        "footer";
-    grid-template-rows:10% 120% 100%;
+    grid-template-areas: "header" "section" "footer";
+    grid-template-rows: 10% 125% 118%;
     margin: 0;
     padding: 0;
-   
 }
-header{
+
+header {
     display: grid;
     grid-template-areas: "header p";
     grid-auto-columns: 50% 50%;
@@ -31,7 +30,8 @@ header{
     position: fixed;
     width: 100%;
 }
-header div button{
+
+header div button {
     width: 32px;
     background-image: url('images/menu.png');
     height: 32px;
@@ -42,37 +42,38 @@ header div button{
     display: none;
     /* margin-left: -110px; */
 }
-header div{
+
+header div {
     grid-area: header;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     margin-left: 10px;
-    margin-top:5px;
+    margin-top: 5px;
     font-size: 2rem;
     padding-top: 40px;
-    
 }
-header div a{
+
+header div a {
     font-size: 2rem;
     color: white;
 }
-header a{
+
+header a {
     font-size: 1rem;
     text-decoration: none;
-    color:white;
-    
-   
+    color: white;
 }
-p
-{display: flex;
+
+p {
+    display: flex;
     grid-area: p;
     align-items: center;
     justify-content: space-evenly;
     margin-top: 40px;
-    
 }
-header div img{
+
+header div img {
     background-color: white;
     border-radius: 30px;
     color: white;
@@ -82,39 +83,44 @@ header div img{
     margin-top: -20px;
 }
 
-section{
+section {
     grid-area: section;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     text-align: center;
     padding: 0;
     margin: 0;
 }
-section div p{
+
+section div p {
     margin: 0;
     color: white;
     font-size: 5rem;
 }
-section div P:nth-child(2){
+
+section div P:nth-child(2) {
     display: flex;
     color: white;
     font-size: 1rem;
 }
-section div div{
+
+section div div {
     margin-top: 40px;
 }
-section div a{
+
+section div a {
     text-decoration: none;
     background-color: #1DB954;
     color: white;
     padding: 20px 50px 20px 50px;
     border-radius: 50px;
 }
-footer{
+
+footer {
     display: grid;
     grid-area: footer;
-    grid-template-areas:"nav nav nav nav nav";
+    grid-template-areas: "nav nav nav nav nav";
     grid-template-columns: 30% 15% 15% 15% 25%;
     justify-content: left;
     color: white;
@@ -123,13 +129,12 @@ footer{
     background-color: black;
 }
 
-footer nav a{
-    display: flex ;
+footer nav a {
+    display: flex;
     color: white;
     text-decoration: none;
     margin: 20px;
-}
-footer nav div{
+}footer nav div{
     display: flex;
     justify-content: flex-start;
     margin-left: 130px;
@@ -157,22 +162,33 @@ footer nav a :last-child{
 }
 footer :last-child{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   
 }
+    footer:last-child {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    } 
 
-@media(max-width: 850px){
-    header{
+    footer nav div a:first-child {
+    flex-direction: row;
+    align-items: end;
+    justify-content: center;
+}
+
+@media(max-width: 850px) {
+    body {
+        height: 800px;
+    }
+    header {
         display: flex;
         background-color: black;
         opacity: 1;
         height: 50px;
-        
-        
     }
-    header a{
-    }
-     header p{
+    header a {}
+    header p {
         flex-direction: column;
         padding-top: 50px;
         display: flex;
@@ -181,83 +197,120 @@ footer :last-child{
         align-content: flex-end;
         margin-top: 10px;
         margin-left: 4px;
-    
-        }
-        header div{
-            display: flex;
-            justify-content:space-between;
-            margin: -20px 0px 20px 80px;
-            font-size: 2rem;
-            
-            }
-            header div a{
-                font-size: 1.5rem;
-        
-            }
-            header div button{
-                display: flex;
-                margin-left: -55px;
-                margin-right: 20px;
-            }
-            header div button:hover{
-                background-color: #1DB954;
-            }
-            header div img{
-                width: 32px;
-                height: 32px;
-                margin-right: 5px;
-            }
-            
-            section div{
-                display: flex;
-                flex-direction: column;
-                
-                justify-content: space-between;
-            }
-            section{
-                justify-content: space-between;
-                display: flex;
-            }
-            section div p{
-                margin: 0;
-                color: white;
-                font-size: 4rem;
-                justify-content: space-between;
-                flex-direction: column;
+    }
+    header div {
+        display: flex;
+        justify-content: space-between;
+        margin: -20px 0px 20px 80px;
+        font-size: 2rem;
+    }
+    header div a {
+        font-size: 1.5rem;
+    }
+    header div button {
+        display: flex;
+        margin-left: -55px;
+        margin-right: 20px;
+    }
+    header div button:hover {
+        background-color: #1DB954;
+    }
+    header div img {
+        width: 32px;
+        height: 32px;
+        margin-right: 5px;
+    }
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+    }
+    section div {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    section div p {
+        margin: 0;
+        color: white;
+        font-size: 4rem;
+        justify-content: center;
+        flex-direction: column;
         display: flex;
         position: absolute;
         align-items: center;
-        /* justify-content: right;
-        align-content: flex-end; */
-            }
-            section div p:nth-child(2){
-                margin-top: 80px;
-            }
-            section div div {
-                margin-top: 120px;
-            }
-                footer {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: flex-start;
-                    justify-content: space-evenly
-            }
-            footer nav div {
-                justify-content: flex-start;margin-left: 0px;}
+
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        margin-top: -350px;
+    }
+    footer nav div {
+        justify-content: flex-start;
+        margin-left: 0px;
+        
+    }
+    section div p:nth-child(2) {
+        margin-top: 80px;
+    }
+    section div div {
+        margin-top: 100px;
+    }
+    section div a {
+        margin-top: 20px;
+    }
 }
-@media(max-width: 503px){
-    section div p:nth-child(2){
+@media(max-width: 670px){
+    footer{
+        display: flex;
+        margin-top: 300px
+        padding: 0;
+    }
+  footer:last-child{flex-direction: column;
+    margin-top: -350px;
+    justify-content: space-evenly;
+  }
+  footer nav:last-child{flex-direction: row;
+   
+  }
+  footer{
+      display: flex;
+      margin-top: -100px;
+      padding: 0;
+  }
+  
+}
+
+@media(max-width: 529px) {
+    
+    section div p:nth-child(2) {
         margin-top: 150px;
     }
     section div div {
         margin-top: 190px;
+    }
+    
 }
-section div a {
-    text-decoration: none;
-    background-color: #1DB954;
-    color: white;
-    padding: 10px 10px 10px 10px;
-    border-radius: 50px;
-    font-size: 1rem;
-    justify-content: center;
-}
+
+@media(max-width: 503px) {
+    section div a {
+        text-decoration: none;
+        background-color: #1DB954;
+        color: white;
+        padding: 10px 10px 10px 10px;
+        border-radius: 50px;
+        font-size: 1rem;
+        justify-content: center;
+    }
+    footer:last-child{flex-direction: column;
+        margin-top: -500px;
+        padding-top: 0;
+      }
+      footer nav{
+          margin-top:100px;
+      }
